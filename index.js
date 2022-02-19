@@ -1,5 +1,6 @@
 import { Builder } from "selenium-webdriver";
 import HomePage from "./Pages/HomePage.js";
+import SignInPage from "./Pages/SignInPage.js";
 
 (async () => {
     let driver = await new Builder().forBrowser("chrome").build();
@@ -9,7 +10,7 @@ import HomePage from "./Pages/HomePage.js";
       await homePage.navigate();
       await homePage.goToSignInPage();
   
-      
+      const signInPage = new SignInPage(driver);
     } catch (e) {
       console.log(e);
     }
