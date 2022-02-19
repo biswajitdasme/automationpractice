@@ -2,7 +2,7 @@ const users = [
   {
     firstName: "John",
     lastName: "Doe",
-    email: "john10@base2brand.com",
+    email: "john10@base2brand.com", // This email should be unique . Change before running the test
     password: "123456",
     address: "123 Main St",
     city: "Houston",
@@ -18,7 +18,7 @@ const users = [
   {
     firstName: "Jane",
     lastName: "Doe",
-    email: "jane10@base2brand.com",
+    email: "jane10@base2brand.com", // This email should be unique . Change before running the test
     password: "123456",
     address: "123 Main St",
     city: "Houston",
