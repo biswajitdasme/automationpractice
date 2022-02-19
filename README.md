@@ -14,7 +14,7 @@
 
 ## Installation
 
-1. Check your chrome version. Go to addressbar and paste and enter this
+1. Check your chrome version. Go to addressbar of Chrome browser, paste and enter this
 
 ```sh
 chrome://version/
