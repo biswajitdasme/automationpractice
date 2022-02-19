@@ -1,4 +1,4 @@
-import { By, Key, until } from "selenium-webdriver";
+import { By, until } from "selenium-webdriver";
 
 export default class CheckoutPage {
   constructor(driver) {
@@ -62,6 +62,4 @@ export default class CheckoutPage {
       )
       .click();
   }
-
-
 }

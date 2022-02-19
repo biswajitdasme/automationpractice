@@ -1,4 +1,4 @@
-import { By, Key, until } from "selenium-webdriver";
+import { By, until } from "selenium-webdriver";
 
 export default class CreateAccountPage {
   constructor(driver) {

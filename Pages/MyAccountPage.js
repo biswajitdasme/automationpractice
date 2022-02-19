@@ -1,4 +1,4 @@
-import { By, Key, until } from "selenium-webdriver";
+import { By, until } from "selenium-webdriver";
 
 export default class MyAccountPage {
   constructor(driver) {
@@ -54,7 +54,6 @@ export default class MyAccountPage {
     await action.move({ origin: addToCartButton }).click().perform();
   }
 
-
   // This method will navigate to the Shirt page
   async goToTShirts() {
     let tShirtsButton = await this.driver.findElement(By.linkText("T-SHIRTS"));
@@ -67,9 +66,7 @@ export default class MyAccountPage {
   // This method will filter items in the selected category list by the blue color
   async filterListByBlue() {
     let colorButton = await this.driver.wait(
-      until.elementLocated(
-        By.css("input#layered_id_attribute_group_14")
-      ),
+      until.elementLocated(By.css("input#layered_id_attribute_group_14")),
       20000
     );
 
