@@ -1,4 +1,5 @@
 import { Builder } from "selenium-webdriver";
+import CreateAccountPage from "./Pages/CreateAccountPage.js";
 import HomePage from "./Pages/HomePage.js";
 import SignInPage from "./Pages/SignInPage.js";
 
@@ -11,6 +12,8 @@ import SignInPage from "./Pages/SignInPage.js";
       await homePage.goToSignInPage();
   
       const signInPage = new SignInPage(driver);
+      const createAccountPage = new CreateAccountPage(driver);
+
     } catch (e) {
       console.log(e);
     }
